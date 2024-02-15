@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { IUser } from '../../4. Domain/user';
+import { IUser } from '../../1. Domain/user';
 
 function validateRegisterData(data: IUser): string[] {
     const errors = [];

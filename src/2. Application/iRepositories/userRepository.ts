@@ -1,4 +1,4 @@
-import { IUser } from "../../4. Domain/user"
+import { IUser } from "../../1. Domain/user"
 /*
 Abstraction of methods to define on User Repository
 */

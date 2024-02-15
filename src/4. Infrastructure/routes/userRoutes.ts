@@ -1,6 +1,6 @@
 import express, { NextFunction, Request } from "express";
-import { UserController } from "../../2. Presentation/Controllers/userController";
-import { UserUseCase } from "../../3. Application/useCases/userUseCase";
+import { UserController } from "../../3. Presentation/Controllers/userController";
+import { UserUseCase } from "../../2. Application/useCases/userUseCase";
 import { userAuth } from "../middleware/userAuth";
 import { UserRepository } from "../repositories/userRepository";
 import { validateUserData } from "../middleware/validateUserData";

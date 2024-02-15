@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express'
-import { UserUseCase } from "../../3. Application/useCases/userUseCase";
+import { UserUseCase } from "../../2. Application/useCases/userUseCase";
 
 /*
 According to Single Responsibility Principle (SRP part of SOLID principles), we have to create multiple controllers

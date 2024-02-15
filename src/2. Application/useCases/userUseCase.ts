@@ -1,4 +1,4 @@
-import { IUser } from "../../4. Domain/user"
+import { IUser } from "../../1. Domain/user"
 import { IUserRepository } from "../iRepositories/userRepository";
 export class UserUseCase {
     // Injecting Interface (Abstraction) to avoid dependence on repository (infrastructure layer) // Dependency Inversion

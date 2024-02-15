@@ -1,5 +1,5 @@
-import { createServer } from "./1. Infrastructure/config/app";
-import { mongoConnect } from "./1. Infrastructure/config/db";
+import { createServer } from "./4. Infrastructure/config/app";
+import { mongoConnect } from "./4. Infrastructure/config/db";
 
 
 const app = createServer()
