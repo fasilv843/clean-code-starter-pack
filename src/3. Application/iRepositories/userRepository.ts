@@ -1,5 +1,7 @@
-import { IUser } from "../../1. Infrastructure/models/userSchema";
-
+import { IUser } from "../../4. Domain/user"
+/*
+Abstraction of methods to define on User Repository
+*/
 export interface IUserRepository {
     save(user: IUser): Promise<IUser>
     getUserData(userId: string): Promise<IUser | null>

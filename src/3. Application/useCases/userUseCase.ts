@@ -1,7 +1,8 @@
-import { IUser } from "../../1. Infrastructure/models/userSchema";
+import { IUser } from "../../4. Domain/user"
 import { IUserRepository } from "../iRepositories/userRepository";
 export class UserUseCase {
-    constructor (private _userRepo: IUserRepository) {}
+    // Injecting Interface (Abstraction) to avoid dependence on repository (infrastructure layer) // Dependency Inversion
+    constructor (private readonly _userRepo: IUserRepository) {}
     
     async saveUserData(user: IUser): Promise<IUser> {
         try {

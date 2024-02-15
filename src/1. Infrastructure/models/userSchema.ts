@@ -1,16 +1,10 @@
 import mongoose, { Model, Schema } from 'mongoose'
-
-export interface IUser {
-    _id: string
-    name: string
-    email: string
-    password: string
-}
+import { IUser } from '../../4. Domain/user'
 
 const userSchema: Schema = new Schema({
-    name: String,
-    email: String,
-    password: String
+    name: { type: String, required: true },
+    email: { type: String, required: true },
+    password: { type: String, required: true }
 })
 
 export const userModel: Model<IUser & Document> = mongoose.model<IUser & Document>('users', userSchema)

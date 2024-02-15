@@ -1,26 +1,13 @@
 Order is in Outermost to Innermost Layer - 4 Layer Clean Architecture
 
 1. Infrastructure Layer #Outermost layer
-2. Presentation Layer / Adapter
+2. Presentation Layer / Adapter / Controller
 3. Application Layer / Use Case
 4. Domain Layer / Enterprise / Entities  #Innermost layer
 
 Clean Architecture - Beginners Guide : https://betterprogramming.pub/the-clean-architecture-beginners-guide-e4b7058c1165
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Nothing in an inner circle or layer can know anything at all about something in an outer circle. i.e. the inner circle shouldn’t depend on anything in the outer circle.
 
 
 SOLID Principles

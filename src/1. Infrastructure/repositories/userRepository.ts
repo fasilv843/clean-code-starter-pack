@@ -1,5 +1,6 @@
 import { IUserRepository } from "../../3. Application/iRepositories/userRepository";
-import { IUser, userModel } from "../models/userSchema";
+import { IUser } from "../../4. Domain/user";
+import { userModel } from "../models/userSchema";
 
 export class UserRepository implements IUserRepository {
     async save (user: IUser): Promise<IUser> {
@@ -19,6 +20,7 @@ export class UserRepository implements IUserRepository {
             { new: true }
         )
     }
+    
     async deleteUser(userId: string): Promise<IUser | null> {
         return await userModel.findByIdAndDelete(userId)
     }
